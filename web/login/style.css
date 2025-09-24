@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  background: linear-gradient(120deg, #cce2e2 60%, #eeedeb 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #35797d;
+  margin-bottom: 32px;
+  text-shadow: 1px 1px 0 #cce2e2;
+}
+
+.logo .highlight {
+  background: #44babc;
+  color: #ffffff;
+  padding: 7px 14px;
+  border-radius: 4px;
+  margin-right: 4px;
+  box-shadow: 0 1px 4px rgba(68,186,188,0.12);
+}
+
+.login-box {
+  background: #ffffff;
+  padding: 32px 28px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 16px rgba(68,186,188,0.13);
+  display: inline-block;
+  min-width: 320px;
+}
+
+.password-display {
+  font-size: 22px;
+  margin-bottom: 24px;
+  border-top: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
+  padding: 12px;
+  letter-spacing: 4px;
+  color: #35797d;
+  background: #eeedeb;
+  border-radius: 4px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  grid-gap: 18px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.keypad button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #44babc;
+  background: #f9f9f9;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  color: #35797d;
+  font-weight: bold;
+  box-shadow: 0 1px 4px rgba(68,186,188,0.07);
+}
+
+.keypad button:hover {
+  background: #44babc;
+  color: #ffffff;
+  border: 2px solid #35797d;
+}
+
+.keypad button.active {
+  background: #35797d;
+  color: #ffffff;
+  border: 2px solid #44babc;
+}
