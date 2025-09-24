@@ -9,8 +9,6 @@ O projeto inclui diagramas e wireframes para facilitar o entendimento da estrutu
 ### Diagramas
 
 ![MerDer](/docs/MERXDER.png)
-![DATV CLIENTE](./DOCS/DATVCLIENTE.drawio.png)
-![DATV ADMIN](./DOCS/DATVADMIN.drawio.png)
 
 ### Telas principais
 
