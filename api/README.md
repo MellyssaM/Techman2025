@@ -53,5 +53,3 @@ npx prisma migrate dev --name init
 ```bash
 git config --global user.email "seu-email@exemplo.com"
 ```
-
-#### Desenvolvido por Pedro Duarte

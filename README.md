@@ -1,75 +1,66 @@
-# Projeto TechMan
+# Projeto TECHMAN
 
-Projeto TechMan desenvolvido para cadastro, exclusão e atualização de equipamento cadastrados por usuarios (Avaliação)
+TechMan é um sistema para cadastro, exclusão e atualização de equipamentos por usuários, desenvolvido para fins de avaliação.
 
-## Wireframes e Diagramas
+## Visão geral
 
-![MerDer](./DOCS/DER.drawio.png)
+O projeto inclui diagramas e wireframes para facilitar o entendimento da estrutura e das principais telas do sistema.
+
+### Diagramas
+
+![MerDer](/docs/MERXDER.png)
 ![DATV CLIENTE](./DOCS/DATVCLIENTE.drawio.png)
 ![DATV ADMIN](./DOCS/DATVADMIN.drawio.png)
 
+### Telas principais
 
-Principais telas 
+![Wireframe01](/docs/senha.png)
+![Wireframe02](/docs/adm.png)
+![Wireframe03](/docs/comentario.png)
 
-![Wireframe01](./DOCS/wireframes/Wireframe01.png)
-![Wireframe02](./DOCS/wireframes/Wireframe02.png)
-![Wireframe03](./DOCS/wireframes/Wireframe03.png)
+## Como testar
 
+1. Instale as ferramentas necessárias:
 
-## Como testar 
-1. Configure o ambiente de desenvolvimento com as seguintes ferramentas.
-
-- [VsCode](https://code.visualstudio.com/)
+- [VS Code](https://code.visualstudio.com/)
 - [XAMPP](https://www.apachefriends.org/pt_br/index.html)
 - [Git](https://git-scm.com/downloads)
 - [NodeJS](https://nodejs.org/pt)
 
-2. Após a instalação das ferramentas siga esse passo para clonar o repositorio e testa-ló.
-
-- Copie o codigo HTTP no GitHub do repositorio que queira testar, abra o Git Bash em sua area de trabalho e coloque o seguinte codígo
+2. Clone o repositório e abra no VS Code:
 
 ```bash
 git clone <https://url>
-```
-
-- Agora com o repositorio clonado, entre nela com o seguinte comando
-
-```bash
 cd <nomedoarquivo>
-```
-
-- Agora dentro do arquivo clonado pelo Git Bash, digite esse comando para abri-lo no VsCode
-
-```bash
 code .
 ```
 
-- Com o arquivo aberto no VsCode, abra o CMD (CRTL+"), e coloque os seguinte comandos na ordem que aparecem logo abaixo
+3. Configure o backend:
 
 ```bash
 cd api
 npm i prisma -g
 npm init -y
-npm i express cors dotenv 
+npm i express cors dotenv
 npx prisma init --datasource-provider mysql
 ```
 
-- Apos colocar os comandos em ordem no CMD crie um pasta chamada .env (caso os comandos dados ja tenham criado não será necessario)
+4. Configure o banco de dados MySQL no arquivo `.env`:
 
 ```bash
 DATABASE_URL="mysql://root@localhost:3306/techman?schema=public&timezone=UTC"
 ```
 
-- Faremos a migração do banco de dados para o MySQL através do comando a seguir no terminal
+5. Execute a migração inicial do banco:
 
 ```bash
 npx prisma migrate dev --name init
 ```
 
-- Caso seja de interesse, coloque seu email para conectar o Git ao GitHub
+6. (Opcional) Configure seu email para o Git:
 
 ```bash
 git config --global user.email "seu-email@exemplo.com"
 ```
 
-#### Desenvolvido por Pedro Duarte
+---
